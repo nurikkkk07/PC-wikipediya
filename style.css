@@ -1,0 +1,172 @@
+:root {
+    --dark: #19191B;
+    --gray: #696871;
+    --purple: #5454D4;
+    --orange: #FF7143;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    top: 0;
+    padding-block: 30px;
+}
+
+[class*="-container"] {
+    max-width: 1070;
+    margin-inline: auto;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    display: flex;
+    gap: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header_list-link {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.47px;
+    color: var(--gray);
+}
+
+.header_list-link.active {
+    color: var(--dark);
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.header_list-link:hover {
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_button{
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 10px;
+}
+
+.header_button {
+        background: var(--orange);
+}
+
+.header_button:hover, .hero_button:hover {
+    opacity: 50%;
+    transition: -0.2s;
+}
+
+main {
+    margin-top: 140px;
+}
+
+.hero {
+    padding-block: 70px;
+}
+
+.hero_container {
+    position: relative;
+}
+
+.hero_content {
+    max-width: 423px;
+    padding-block: 92px;
+}
+
+.hero_image {
+    position: absolute;
+    top: 0;
+    right: 75px;
+}
+
+.hero_title {
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: -2.5px;
+    line-height: 77px;
+    color: var(--dark);
+}
+
+.hero_desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.63px;
+    line-height: 30px;
+    color: var(--gray);
+    margin-top: 30px;
+}
+
+.hero_button {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.features {
+    padding-block: 120px;
+}
+
+.features_container {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 460px;
+}
+
+.feature_title {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: -1.56px;
+    line-height: 57px;
+}
+
+.feature_desc {
+    font-family: "Mulish", sans-serif;
+}
+
+.feature_link:hover {
+    text-decoration: underline;
+}
